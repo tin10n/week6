@@ -55,17 +55,17 @@ h1{
 }
 
 
-.greenText{
+.winText{
     color: #ff17cd;
 }
 
 
-.redText{
+.loseText{
     color: #f71c77;
 }
 
 
-.blackText{
+.tieText{
     color: #fd76ae;
 }
 

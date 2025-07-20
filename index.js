@@ -1,6 +1,8 @@
 // ROCK PAPER SCISSORS GAME
 
-
+/* This shows the array of choices that the player has.
+The display elements show what is occuring.
+The score display tracks the score */
 const options = ["rock", "paper", "scissors"];
 const playerDisplay = document.getElementById("playerDisplay");
 const computerDisplay = document.getElementById("computerDisplay");
@@ -41,7 +43,7 @@ function playGame(playerOption){
     }
 
 
-    resultDisplay.classList.remove("greenText", "redText", "blackText");
+    resultDisplay.classList.remove("winText", "loseText", "tieText");
 
 
     playerDisplay.textContent = `PLAYER: ${playerOption}`;
@@ -51,7 +53,7 @@ function playGame(playerOption){
 
     switch(result){
         case "YOU WIN!":
-            resultDisplay.classList.add("greenText")
+            resultDisplay.classList.add("winText")
             playerScore++;
             playerScoreDisplay.textContent = playerScore;
             break;
@@ -59,14 +61,26 @@ function playGame(playerOption){
 
 
         case "YOU LOSE!":
-            resultDisplay.classList.add("redText")
+            resultDisplay.classList.add("loseText")
             computerScore++;
             computerScoreDisplay.textContent = computerScore;
             break;
        
         case "IT'S A TIE!":
-            resultDisplay.classList.add("blackText")
+            resultDisplay.classList.add("tieText")
             break;  
     }
    
+    // Add an event listener for the reset button
+    document.getElementById("resetButton").addEventListener("click", resetGame);
+
+
+    // Reset the score displays
+        playerScoreDisplay.textContent = playerScore;
+        computerScoreDisplay.textContent = computerScore;
+
+    // Clear the game result and choices
+        resultDisplay.textContent = "";
+        playerDisplay.textContent = "PLAYER: ";
+        computerDisplay.textContent = "COMPUTER: ";
 }
