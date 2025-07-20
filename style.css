@@ -1,0 +1,79 @@
+/* CSS Reset */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap');
+  font-family: "Bitcount Grid Single", system-ui;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+h1{
+    font-family: Impact, sans-serif;
+    font-size: 6rem;
+    color:  #FF69B4;
+    text-align: center;
+}
+
+
+.options{
+    margin-bottom: 20px;
+}
+
+
+.options button{
+    font-size: 4.5rem;
+    border-radius: 20px;
+    margin: 20px 10px;
+    background-color: #ffdcea;
+    cursor: pointer;
+    transition: background-color 0.7s ease;
+}
+
+
+#options button:hover{
+    background-color: hsl(315, 100%, 84%);
+}
+
+
+#playerDisplay, #computerDisplay{
+    color: rgb(10, 10, 10);
+}
+
+
+.scoreDisplay{
+    font-size: .8rem;
+}
+
+
+.greenText{
+    color: #ff17cd;
+}
+
+
+.redText{
+    color: #f71c77;
+}
+
+
+.blackText{
+    color: #fd76ae;
+}
+
+
+@media only screen and (max-width: 600px){
+ 
+  h1{
+    font-size: 4rem;
+    text-align: center;
+  }
+}
