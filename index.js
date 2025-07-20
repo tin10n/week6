@@ -1,8 +1,6 @@
-// ROCK PAPER SCISSORS GAME
+// ROCK PAPER SCISSORS GAME COQUETTE VERSION //
 
-/* This shows the array of choices that the player has.
-The display elements show what is occuring.
-The score display tracks the score */
+// This shows the array of choices that the player has. The display elements show what is occuring. The score display tracks the score of both the player and computer. //
 
 const options = ["rock", "paper", "scissors"];
 const playerDisplay = document.getElementById("playerDisplay");
@@ -12,11 +10,12 @@ const playerScoreDisplay = document.getElementById("playerScoreDisplay")
 const computerScoreDisplay = document.getElementById("computerScoreDisplay")
 let playerScore = 0;
 let computerScore = 0;
+let tieScore = 0;
 
 
 function playGame(playerOption){
 
-// Generates Computer Option and what the result is if a certain option is picked. //
+// Generates computer option and what the result is if a certain option is picked. Number 3 is used because there are 3 options to choose from. //
     const computerOption = options[Math.floor(Math.random() * 3)]
     console.log(computerOption);
     let result = "";
@@ -43,7 +42,7 @@ function playGame(playerOption){
         }
     }
 
-// resets the results //
+// Resets the results, that way the text colors are consistent. //
     resultDisplay.classList.remove("winText", "loseText", "tieText");
 
 
@@ -51,7 +50,7 @@ function playGame(playerOption){
     computerDisplay.textContent = `COMPUTER: ${computerOption}`;
     resultDisplay.textContent = result;
 
-
+    // Text color changes depending on your results. //
     switch(result){
         case "YOU WIN!":
             resultDisplay.classList.add("winText")
@@ -67,19 +66,19 @@ function playGame(playerOption){
        
         case "IT'S A TIE!":
             resultDisplay.classList.add("tieText")
+            tieScore++;
+            tieScoreDisplay.textContent = tieScore;
             break;  
     }
    
-    // Add an event listener for the reset button
+    // Adding an event listener for the Reset button, on click command. //
     document.getElementById("resetButton").addEventListener("click", resetGame);
+    
+    function resetGame(){
+    // Reset the score displays by having the score displays change to 0. //
+        document.getElementById("playerScoreDisplay").innerHTML= 0;
+        document.getElementById("computerScoreDisplay").innerHTML = 0;
+        document.getElementById("tieScoreDisplay").innerHTML = 0;
+}
 
-
-    // Reset the score displays
-        playerScoreDisplay.textContent = playerScore;
-        computerScoreDisplay.textContent = computerScore;
-
-    // Clear the game result and choices
-        resultDisplay.textContent = "";
-        playerDisplay.textContent = "PLAYER: ";
-        computerDisplay.textContent = "COMPUTER: ";
 }

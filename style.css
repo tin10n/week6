@@ -1,78 +1,85 @@
 /* CSS Reset */
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-body{
-@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap');
+body {
+  @import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap");
   font-family: "Bitcount Grid Single", system-ui;
   display: flex;
   flex-direction: column;
+  font-size: 2rem;
   align-items: center;
+  justify-content: center;
+  margin: 9%;
+  background-image: url(https://static.vecteezy.com/system/resources/previews/045/893/199/non_2x/soft-pink-gradient-background-y2k-aesthetic-blurred-wallpaper-abstract-banner-vector.jpg);
 }
 
-
-h1{
-    font-family: Impact, sans-serif;
-    font-size: 6rem;
-    color:  #FF69B4;
-    text-align: center;
+h1 {
+  font-family: Impact, sans-serif;
+  font-size: 6rem;
+  color: #ff69b4;
+  text-align: center;
 }
 
-
-.options{
-    margin-bottom: 20px;
+.options {
+  margin-bottom: 20px;
 }
 
-
-.options button{
-    font-size: 4.5rem;
-    border-radius: 20px;
-    margin: 20px 10px;
-    background-color: #ffdcea;
-    cursor: pointer;
-    transition: background-color 0.7s ease;
+.options button {
+  font-size: 4.5rem;
+  border-radius: 20px;
+  margin: 20px 10px;
+  background-color: #ffdcea;
+  cursor: pointer;
+  transition: background-color 0.7s ease;
 }
 
-
-#options button:hover{
-    background-color: hsl(315, 100%, 84%);
+#options button:hover {
+  background-color: hsl(315, 100%, 84%);
 }
 
-
-#playerDisplay, #computerDisplay{
-    color: rgb(10, 10, 10);
+#playerDisplay,
+#computerDisplay {
+  color: rgb(10, 10, 10);
+  font-size: 2rem;
 }
 
-
-.scoreDisplay{
-    font-size: .8rem;
+.scoreDisplay {
+  font-size: 2rem;
 }
 
-
-.winText{
-    color: #ff17cd;
+.winText {
+  color: #ff17cd;
 }
 
-
-.loseText{
-    color: #f71c77;
+.loseText {
+  color: #f71c77;
 }
 
-
-.tieText{
-    color: #fd76ae;
+.tieText {
+  color: #fd76ae;
 }
 
+#resetButton {
+  margin: auto;
+}
 
-@media only screen and (max-width: 600px){
- 
-  h1{
+#resetButton button {
+  background-color: #ffcff5;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 15%;
+  }
+  h1 {
     font-size: 4rem;
     text-align: center;
   }

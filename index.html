@@ -1,46 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" lang="en"/>
     <title>Let's Play!</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Rock Paper Scissors</h1>
 
-
-</head>
-<body>
-
-
-    <h1> Rock Paper Scissors </h1>
-   
     <div class="options">
-        <button onclick="playGame ('rock')"> ✊ྀི </button>  
-        <button onclick="playGame ('paper')"> ✋ྀི </button>
-        <button onclick="playGame ('scissors')"> ✌ྀི </button>
+      <button onclick="playGame ('rock')">✊ྀི</button>
+      <button onclick="playGame ('paper')">✋ྀི</button>
+      <button onclick="playGame ('scissors')">✌ྀི</button>
     </div>
 
+    <div id="playerDisplay">PLAYER:</div>
+    <div id="computerDisplay">COMPUTER:</div>
+    <div id="resultDisplay"></div>
 
-    <div id="playerDisplay"> PLAYER: </div>
-    <div id="computerDisplay"> COMPUTER: </div>
-    <div id="resultDisplay">  </div>
-
-
-    <div class="scoreDisplay"> PLAYER SCORE:
-        <span id="playerScoreDisplay"> 0 </span>
+    <div class="scoreDisplay">
+      PLAYER SCORE:
+      <span id="playerScoreDisplay"> 0 </span>
     </div>
 
-
-       <div class="scoreDisplay"> COMPUTER SCORE:
-        <span id="computerScoreDisplay"> 0 </span>
+    <div class="scoreDisplay">
+      COMPUTER SCORE:
+      <span id="computerScoreDisplay"> 0 </span>
     </div>
 
-    <button id="resetButton">Reset Game</button>
+    <div class="scoreDisplay">
+      TIE SCORE:
+      <span id="tieScoreDisplay"> 0 </span>
+    </div>
 
+    <div id="resetButton">
+      <button onclick="resetGame ('resetButton')">Reset Game</button>
+    </div>
 
- <script src="index.js"></script>
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head> </head>
+</html>
