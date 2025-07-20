@@ -3,6 +3,7 @@
 /* This shows the array of choices that the player has.
 The display elements show what is occuring.
 The score display tracks the score */
+
 const options = ["rock", "paper", "scissors"];
 const playerDisplay = document.getElementById("playerDisplay");
 const computerDisplay = document.getElementById("computerDisplay");
@@ -15,7 +16,7 @@ let computerScore = 0;
 
 function playGame(playerOption){
 
-
+// Generates Computer Option and what the result is if a certain option is picked. //
     const computerOption = options[Math.floor(Math.random() * 3)]
     console.log(computerOption);
     let result = "";
@@ -42,7 +43,7 @@ function playGame(playerOption){
         }
     }
 
-
+// resets the results //
     resultDisplay.classList.remove("winText", "loseText", "tieText");
 
 
@@ -57,8 +58,6 @@ function playGame(playerOption){
             playerScore++;
             playerScoreDisplay.textContent = playerScore;
             break;
-           
-
 
         case "YOU LOSE!":
             resultDisplay.classList.add("loseText")
