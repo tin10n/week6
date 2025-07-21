@@ -1,9 +1,10 @@
-🎀 Welcome to Rock, Paper, Scissors – Coquette Version 🎀
+	** ** 🎀 Welcome to Rock, Paper, Scissors – Coquette Version 🎀 ** **
+
 ⋅˚₊‧ ୨୧ ‧₊˚ ⋅ First one to 10 points wins! ⋅˚₊‧ ୨୧ ‧₊˚ ⋅
 
 ────୨ৎ──── This is my submission for the Guided Inquiry Week 6 assignment, and it features a fun and interactive version of Rock, Paper, Scissors. ────୨ৎ────
 
-What’s in this project?
+** ** What’s in this project? ** **
 This repository contains the core files to play the Rock, Paper, Scissors game, and it’s hosted on Vercel where you can play it directly in your browser. 
 
 Here's an overview of the files and what they do:
@@ -21,7 +22,7 @@ Files in this repository:
 You can also access the live game through the Vercel link.
 
 
-* * Why I deserve a 4?
+*** *** Why I deserve a 4? *** ***
 I believe I deserve a score of 4 because I’ve met all the requirements for the project, including both the core features and the optional challenges.
 
 Core Features:
@@ -35,7 +36,7 @@ Optional Challenges:
 Reset button: A reset button is included to allow the player to clear the score and start a new game.
 
 
-Key Takeaways:
+** ** Key Takeaways: ** **
 
 Throughout this project, I learned several important JavaScript and web development concepts that will help me in future projects.
 
@@ -63,7 +64,7 @@ The shorthand ++ operator is used to update the score by adding 1 when the playe
 
 
 
-How to Play
+** ** How to Play: ** **
 - Click on one of the buttons to select your move: Rock, Paper, or Scissors.
 - The computer will randomly pick a move.
 - The game will then display the result: You Win!, You Lose!, or It’s a Tie!.
@@ -71,11 +72,11 @@ How to Play
 - Hit the Reset button to start a new game.
 
 
-What’s Next?
+** ** What’s Next? ** **
 This project is a great learning experience, but I am looking forward to enhancing it further:
 - Adding more advanced features like multiplayer mode.
 - Adding a drop down menu that displays “How to Play.” 
 - Adding sound effects for better interactivity.
 
 
-‧₊˚ ⋅ Feel free to explore the code, play the game, and check out the live version hosted on Vercel! ‧₊˚ ⋅
+** ‧₊˚ ⋅ Feel free to explore the code, play the game, and check out the live version hosted on Vercel! ‧₊˚ ⋅ **
